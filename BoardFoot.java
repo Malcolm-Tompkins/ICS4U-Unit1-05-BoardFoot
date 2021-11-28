@@ -33,7 +33,7 @@ final class BoardFoot {
     * @return length of board foot
     */
 
-    public static double calculateLength(final double height, final double width) {
+    public static double calcLength(final double height, final double width) {
         // Process
         final double length = BOARD_FOOT_SIZE / (height * width);
         return length;
@@ -54,7 +54,7 @@ final class BoardFoot {
             try {
                 System.out.println("Input your width: ");
                 final double userWidth = myObj.nextDouble();
-                final double length = calculateLength(userHeight, userWidth);
+                final double length = calcLength(userHeight, userWidth);
                 // Output
                 System.out.println(
                     "The wood should be " + length
